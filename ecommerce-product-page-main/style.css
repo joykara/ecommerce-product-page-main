@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+    font-family: "Kumbh Sans", sans-serif;
+}
+#logo{
+    position: relative;
+    top: 30px;
+    left: 80px;
+}
+header{
+    overflow: ;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    position: relative;
+    right: 300px;
+    bottom: 20px;
+    font-family: "Kumbh Sans", sans-serif;
+}
+#cart-1{
+    position: relative;
+    right: 10px;
+    top: 20px;
+}
+a{
+    text-decoration: none;
+    color: rgb(145, 145, 144);
+    padding-inline: 10px;
+}
+#nav1{
+    position: relative;
+    left: 100px;
+    top: 25px;
+}
+#nav2{
+    position: relative;
+    right: 150px;
+    top: px;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    bottom: 40px;
+    gap: 20px;
+    size: 1px;
+}
+h2{
+    color: hsl(26, 100%, 55%);
+    font-size: 18px;
+}
+h3{
+    font-size: 40px;
+}
+p{
+    position:relative;
+    top: 20px;
+    color:  rgb(145, 145, 144);
+    font-size: 16px;
+
+    
+}
+.right{
+    position: relative;
+    bottom: 30px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:100px;
+    position: relative;
+    top: 30px;
+    
+}
+#img1{
+    border-radius: 10px;
+}
+.thumbnails {
+    display: flex;
+    gap: 13px;
+    
+}
+.thumbnails img{
+    position: relative;
+    top: 35px;
+    left: 135px;
+    width: 80px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.price{
+    position: relative;
+    top: 30px;
+    display: flex;
+}
+#now{
+   font-size:30px;
+   font-weight: 600;
+   color: black;
+}
+#discount{
+    position: relative;
+    left: 20px;
+    top: 29px;
+    color:  hsl(26, 100%, 55%);
+    border-radius: 10px;
+    font-weight: 900;
+}
+#then{
+    position: relative;
+    top: 65px;
+    right: 135px;
+    text-decoration: line-through;
+}
+.buttons{
+    position: relative;
+    top: 100px;
+   
+}
+#add{
+    padding-inline: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+#cart-button{
+    padding-inline: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    font-size: 15px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+
+}
+#cart-2{
+    color: white;
+    position: relative;
+    right: 10px;
+    top: 2px;
+}
+.hamburger {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 5px;
+    background-color: #333;
+    transition: 0.3s;
+  }
+  
+  .hamburger span:first-child {
+    transform: translateY(-10px);
+  }
+  
+  .hamburger span:last-child {
+    transform: translateY(10px);
+  }
+  
+  .menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: none;
+  }
+  
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-bottom: 10px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .menu a:hover {
+    color: #666;
+  }
+  
+  /* Toggle menu on hamburger click */
+  .hamburger.active span:first-child {
+    transform: translateY(0px);
+  }
+  
+  .hamburger.active span:last-child {
+    transform: translateY(0px);
+  }
+  
+  .menu.active {
+    display: block;
+  }
+@media (max-width:700px){
+    .container{
+        display: block;
+    }
+}
+
+
+
+

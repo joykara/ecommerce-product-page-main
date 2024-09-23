@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="lightbox.css">
+</head>
+<body>
+  <img src="images/logo.svg" alt="Logo" id="logo">
+  <header>
+    <div id="hamburger">
+      <div>
+          <input type="text" class="search-box" placeholder=" ">
+          <a href="" class="search-icon"><i class="fas fa-search"></i></a>
+      </div>
+      <div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+      </div>
+  </div>
+<nav id="nav1">
+  <ul>
+ <li> <a href="#">Collections</a> </li>
+ <li><a href="#">Men</a></li>
+ <li><a href="#">Women</a></li>
+ <li><a href="#">About</a></li>
+ <li><a href="#">Contact</a></li>
+  </ul>
+  </nav>
+  <nav id="nav2">
+    <img src="images/icon-cart.svg" alt="cart" width="25px" height="25px" id="cart-1"></li>
+    <img src="images/image-avatar.png" alt="" width="50px"></li>
+  </nav>
+</header>
+<hr>
+<div class="container">
+<div>
+  <img src="images/image-product-1.jpg" alt="" width="420px" id="img1">
+</div>
+
+<div class="right">
+
+  <h2>Sneaker Company</h2>
+  
+  <h3>Fall Limited Edition <br> Sneakers</h3>
+  
+  <p>These low-profile sneakers are your perfect casual wear <br> companion. Featuring a 
+  durable rubber outer sole, they’ll <br> withstand everything the weather can offer.</p>
+  <div class="price">
+
+  <p id="now">$125.00 
+  </p>
+  <p id="discount">50%
+  </p>
+  <p id="then">
+    $250.00
+  </p>
+</div>
+  <div class="buttons">
+    <button id="add">0</button> 
+    <button id="cart-button"><img src="images/icon-cart.svg" alt="" width="15px" id="cart-2">Add to cart</button>
+  </div>
+  </div>
+</div>
+<div class="thumbnails">
+  <a href="images/image-product-1.jpg" data-lightbox="shoes"> 
+    <img src="images/image-product-1-thumbnail.jpg" alt="">
+
+  </a>
+  <a href="images/image-product-2.jpg" data-lightbox="shoes"> 
+    <img src="images/image-product-2-thumbnail.jpg" alt="">
+
+  </a>
+  <a href="images/image-product-3.jpg" data-lightbox="shoes"> 
+    <img src="images/image-product-3-thumbnail.jpg" alt="">
+
+  </a>
+  <a href="images/image-product-4.jpg" data-lightbox="shoes"> 
+    <img src="images/image-product-4-thumbnail.jpg" alt="">
+
+  </a>
+ </div>
+  
+<script src="script.js"></script>
+<script src="lightbox-plus-jquery.js"></script>
+</body>
+</html>
