@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://kit.fontawesome.com/fef71db9ad.js" crossorigin="anonymous"></script>
   
   <title>Frontend Mentor | E-commerce product page</title>
 
@@ -17,20 +18,21 @@
 <link rel="stylesheet" href="lightbox.css">
 </head>
 <body>
+  <header class="top-navbar">
+    <nav id="hamburger-container">
+      <i id="toggle" class="fa-solid fa-bars"></i>
+  <ul id="hamburger-menu">
+    <i class="fa-solid fa-xmark"></i>
+    <li> <a href="#">Collections</a> </li>
+    <li><a href="#">Men</a></li>
+    <li><a href="#">Women</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+     </ul>
+    </nav>
   <img src="images/logo.svg" alt="Logo" id="logo">
-  <header>
-    <div id="hamburger">
-      <div>
-          <input type="text" class="search-box" placeholder=" ">
-          <a href="" class="search-icon"><i class="fas fa-search"></i></a>
-      </div>
-      <div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-      </div>
-  </div>
-<nav id="nav1">
+   
+<nav id="menu-nav">
   <ul>
  <li> <a href="#">Collections</a> </li>
  <li><a href="#">Men</a></li>
@@ -39,12 +41,12 @@
  <li><a href="#">Contact</a></li>
   </ul>
   </nav>
-  <nav id="nav2">
+  <nav id="cart-nav">
     <img src="images/icon-cart.svg" alt="cart" width="25px" height="25px" id="cart-1"></li>
     <img src="images/image-avatar.png" alt="" width="50px"></li>
   </nav>
 </header>
-<hr>
+<hr class="line">
 <div class="container">
 <div>
   <img src="images/image-product-1.jpg" alt="" width="420px" id="img1">
