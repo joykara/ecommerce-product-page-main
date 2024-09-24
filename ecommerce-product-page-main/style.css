@@ -1,49 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
 
-*{
+* {
     padding: 0;
-    margin: 0; 
+    margin: 0;
     box-sizing: border-box;
     font-family: "Kumbh Sans", sans-serif;
 }
+
 /* #logo{
     position: relative;
     top: 30px;
     left: 80px;
 } */
-ul{
+ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
-    
+
     font-family: "Kumbh Sans", sans-serif;
 }
-#cart-1{
-    /* position: relative;
-    right: 10px;
-    top: 20px; */
-}
-a{
+
+a {
     text-decoration: none;
     color: rgb(145, 145, 144);
     padding-inline: 10px;
 }
-.line{
+
+.line {
     color: rgb(145, 145, 144);
     opacity: 15%;
 }
-.top-navbar{
+
+.top-navbar {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin: 2rem 0;
 }
-#menu-nav{
+
+#menu-nav {
     /* position: relative;
     left: 100px;
     top: 25px; */
 }
-#cart-nav{
+
+#cart-nav {
     /* position: relative;
     right: 150px;
     top: px; */
@@ -55,40 +56,47 @@ a{
     gap: 20px;
     size: 1px;
 }
-h2{
+
+h2 {
     color: hsl(26, 100%, 55%);
     font-size: 18px;
 }
-h3{
+
+h3 {
     font-size: 40px;
 }
-p{
-    position:relative;
+
+p {
+    position: relative;
     top: 20px;
-    color:  rgb(145, 145, 144);
+    color: rgb(145, 145, 144);
     font-size: 16px;
 }
-.right{
+
+.right {
     position: relative;
     bottom: 30px;
 }
-.container{
+
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:100px;
+    gap: 100px;
     position: relative;
     top: 30px;
 }
-#img1{
+
+#img1 {
     border-radius: 10px;
 }
+
 .thumbnails {
     display: flex;
     gap: 13px;
-    
 }
-.thumbnails img{
+
+.thumbnails img {
     position: relative;
     top: 35px;
     left: 135px;
@@ -96,36 +104,41 @@ p{
     border-radius: 10px;
     overflow: hidden;
 }
-.price{
+
+.price {
     position: relative;
     top: 30px;
     display: flex;
 }
-#now{
-   font-size:30px;
-   font-weight: 600;
-   color: black;
+
+#now {
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
 }
-#discount{
+
+#discount {
     position: relative;
     left: 20px;
     top: 29px;
-    color:  hsl(26, 100%, 55%);
+    color: hsl(26, 100%, 55%);
     border-radius: 10px;
     font-weight: 900;
 }
-#then{
+
+#then {
     position: relative;
     top: 65px;
     right: 135px;
     text-decoration: line-through;
 }
-.buttons{
+
+.buttons {
     position: relative;
     top: 100px;
-   
 }
-#add{
+
+#add {
     padding-inline: 60px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -135,7 +148,8 @@ p{
     font-weight: 600;
     cursor: pointer;
 }
-#cart-button{
+
+#cart-button {
     padding-inline: 60px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -145,49 +159,62 @@ p{
     border-radius: 7px;
     border: none;
     cursor: pointer;
-
 }
-#cart-2{
+
+#cart-2 {
     color: white;
     position: relative;
     right: 10px;
     top: 2px;
 }
 
-#hamburger-container{
+#hamburger-container {
     opacity: 0;
 }
-#toggle{
- width: 2rem;
- height: 2rem;
- cursor: pointer;
-}
 
-#hamburger-menu{
- position: absolute;
- z-index: 10;
- top: 0;
- left: 0;
- padding-top: 2rem;
- display: none;
- flex-direction: column;
- gap: 1rem;
- background-color: #fff;
- height: 100vh;
- width: 70% !important;
- color: black;
- font-weight: 400;
-}
-#hamburger-menu.show{
- display: flex;
-}
+@media screen and (max-width: 768px) {
+    #menu-nav {
+        display: none;
+    }
 
-
-@media screen and (max-width: 768px){
-#menu-nav{
-    display: none;
-}
-    #hamburger-container{
+    #hamburger-container {
         opacity: 100% !important;
+    }
+
+    #toggle {
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+    }
+    #close {
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+        margin-top: 4rem;
+        margin-left: 4rem;
+    }
+
+    #hamburger-menu {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        display: none;
+        background-color: #fff;
+        height: 100vh;
+        width: 70% !important;
+    }
+
+    #hamburger-menu.show {
+        display: block;
+    }
+
+    #hamburger-menu ul{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding-top: 2rem;
+        font-weight: 400;
+        margin-left: 3rem;
     }
 }
